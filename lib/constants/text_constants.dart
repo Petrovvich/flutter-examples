@@ -1,0 +1,1 @@
+const WELCOME_TEXT = 'Welcome to';
