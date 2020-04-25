@@ -6,12 +6,12 @@ import 'package:flutter_simple_app/constants/assets_image_constants.dart';
 import 'package:flutter_simple_app/constants/text_constants.dart';
 import 'package:flutter_simple_app/screens/style_constants.dart';
 
-class MainPage extends StatefulWidget {
+class LoginScreen extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _MainState();
+  State<StatefulWidget> createState() => _LoginScreenState();
 }
 
-class _MainState extends State<MainPage> {
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +60,7 @@ class _MainState extends State<MainPage> {
                           Container(
                             margin: EdgeInsets.only(left: 10),
                             child: Text(
-                              'PlanetEarth',
+                              'Company',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 40,
@@ -119,6 +119,50 @@ class _MainState extends State<MainPage> {
                               labelStyle: TextStyle(
                                 color: Colors.white,
                               ),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.symmetric(vertical: 30.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: <Widget>[
+                                ButtonTheme(
+                                  height: 50.0,
+                                  buttonColor: Colors.white,
+                                  child: RaisedButton(
+                                    child: Text(
+                                      'Login',
+                                      style: TextStyle(letterSpacing: 0.5),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, '/main');
+                                    },
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Text(
+                                  'Dont have an account?',
+                                  style: TextStyle(
+                                      fontSize: 12.0, color: Colors.white),
+                                ),
+                                SizedBox(
+                                  width: 3.0,
+                                ),
+                                Text(
+                                  'REGISTER NOW',
+                                  style: TextStyle(
+                                      fontSize: 12.0, color: Colors.yellow),
+                                )
+                              ],
                             ),
                           )
                         ],
