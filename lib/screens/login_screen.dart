@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_app/components/facebook_login_button.dart';
 import 'package:flutter_simple_app/components/label_text.dart';
