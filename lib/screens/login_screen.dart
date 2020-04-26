@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_app/components/facebook_login_button.dart';
 import 'package:flutter_simple_app/components/label_text.dart';
-import 'package:flutter_simple_app/constants/assets_image_constants.dart';
+import 'package:flutter_simple_app/constants/images_constants.dart';
 import 'package:flutter_simple_app/constants/text_constants.dart';
-import 'package:flutter_simple_app/screens/style_constants.dart';
+import 'package:flutter_simple_app/constants/style_constants.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
