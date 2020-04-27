@@ -4,8 +4,6 @@ import 'package:flutter_simple_app/components/main_background.dart';
 import 'package:flutter_simple_app/components/main_button_more.dart';
 import 'package:flutter_simple_app/components/main_header.dart';
 import 'package:flutter_simple_app/components/main_weather_widget.dart';
-import 'package:flutter_simple_app/components/styled_avatar.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -19,21 +17,35 @@ class _MainScreenState extends State<MainScreen> {
       body: Stack(
         children: <Widget>[
           MainBackground(),
-          SafeArea(
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Column(
-                children: <Widget>[
-                  MainHeader(),
-                  SizedBox(
-                    height: 30.0,
-                  ),
-                  MainWeatherWidget(),
-                  SizedBox(
-                    height: 12.0,
-                  ),
-                  MainButtonMore(),
-                ],
+          SingleChildScrollView(
+            child: SafeArea(
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Column(
+                  children: <Widget>[
+                    MainHeader(),
+                    SizedBox(
+                      height: 30.0,
+                    ),
+                    MainWeatherWidget(),
+                    SizedBox(
+                      height: 12.0,
+                    ),
+                    MainButtonMore(),
+                    SizedBox(
+                      height: 15.0,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Text(
+                          'Gallery',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18.0),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

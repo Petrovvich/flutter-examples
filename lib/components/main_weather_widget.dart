@@ -26,6 +26,7 @@ class MainWeatherWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 StyledAvatar(
                   Color(0xFF2ACA85),
@@ -70,6 +71,7 @@ class MainWeatherWidget extends StatelessWidget {
               color: Colors.grey,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 StyledAvatar(
                   Color(0xFF9A6FD1),
