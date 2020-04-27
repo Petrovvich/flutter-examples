@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_simple_app/components/image_scroll_view.dart';
 import 'package:flutter_simple_app/components/main_background.dart';
 import 'package:flutter_simple_app/components/main_button_more.dart';
 import 'package:flutter_simple_app/components/main_header.dart';
@@ -44,6 +45,10 @@ class _MainScreenState extends State<MainScreen> {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 15.0,
+                    ),
+                    ImageScrollView(),
                   ],
                 ),
               ),
