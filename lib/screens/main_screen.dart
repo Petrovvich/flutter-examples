@@ -1,7 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_app/components/main_background.dart';
+import 'package:flutter_simple_app/components/main_button_more.dart';
 import 'package:flutter_simple_app/components/main_header.dart';
 import 'package:flutter_simple_app/components/main_weather_widget.dart';
+import 'package:flutter_simple_app/components/styled_avatar.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -24,7 +28,11 @@ class _MainScreenState extends State<MainScreen> {
                   SizedBox(
                     height: 30.0,
                   ),
-                  MainWeatherWidget()
+                  MainWeatherWidget(),
+                  SizedBox(
+                    height: 12.0,
+                  ),
+                  MainButtonMore(),
                 ],
               ),
             ),
