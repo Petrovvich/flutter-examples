@@ -2,14 +2,19 @@ import 'package:flutter/material.dart';
 
 class ResizedAssetImage extends StatelessWidget {
   final String _imagePath;
+  final EdgeInsetsGeometry _margin;
+  final double _width;
+  final double _height;
 
-  const ResizedAssetImage(this._imagePath);
+  const ResizedAssetImage(
+      this._imagePath, this._margin, this._width, this._height);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 10.0),
-      width: MediaQuery.of(context).size.width / 4,
+      margin: _margin,
+      width: _width,
+      height: _height,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(10.0),
