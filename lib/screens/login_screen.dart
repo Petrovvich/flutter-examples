@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_simple_app/components/facebook_login_button.dart';
 import 'package:flutter_simple_app/components/label_text.dart';
 import 'package:flutter_simple_app/constants/images_constants.dart';
-import 'package:flutter_simple_app/constants/text_constants.dart';
 import 'package:flutter_simple_app/constants/style_constants.dart';
+import 'package:flutter_simple_app/constants/text_constants.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -13,23 +13,26 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: ExactAssetImage(MAIN_BACKGROUND_IMG),
-            fit: BoxFit.cover,
-            alignment: Alignment.topCenter,
-          ),
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: ExactAssetImage(MAIN_BACKGROUND_IMG),
+          fit: BoxFit.cover,
+          alignment: Alignment.topCenter,
         ),
-        child: Stack(
+      ),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Stack(
           children: <Widget>[
             Container(
               color: Color(0xBF3E985E),
             ),
             SingleChildScrollView(
+              padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewInsets.bottom),
               child: Container(
                 child: Column(
                   children: <Widget>[
