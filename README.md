@@ -6,4 +6,4 @@ Not for commercial use! It's only for practice in flutter and dart.
 
 Example UI:
 
-<img src="doc/untitled.gif" alt="First app layout example" title="UI example" width="324" height="648" /> 
+<img src="flutter_simple_app/doc/untitled.gif" alt="First app layout example" title="UI example" width="324" height="648" /> 
