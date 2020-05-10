@@ -1,4 +1,7 @@
-# Very first flutter app 
+# A Catalog of sample applications created on Flutter and Dart
+
+
+## Very first flutter app 
 
 My first flutter project based on a real layout. This app wrote by design from [here](https://dribbble.com/shots/5757866-Agriculture-App-Design).
 
